@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        main img {
+            width: 700px;
+            height: 500px;
+        }
+        
+        main div {
+            padding: 15px;
+        }
+        
+        button {
+            width: 100px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .decade {
+            width: 80%;
+            margin: 40px auto;
+        }
+        
+        .decade h2 {
+            color: black;
+        }
+        
+        .car-info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .car-info img {
+            width: 600px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        .car-info div {
+            max-width: 600px;
+        }
+
+		.button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #e74c3c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            margin: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.5s;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #a93226;
+            transform: scale(0.95);
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logof1.webp" alt="Logo F1"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="coches.html">Coches</a></li>
+                <li><a href="circuito.html">Circuito</a></li>
+                <li><a href="#">Pilotos</a>
+                    <ul>
+                        <li><a href="pilotos/piloto_ferrari.html">Ferrari</a></li>
+                        <li><a href="pilotos/piloto_redbull.html">Red Bull</a></li>
+                        <li><a href="pilotos/piloto_mclaren.html">McLaren</a></li>
+                        <li><a href="pilotos/piloto_astonmartin.html">Aston Martin</a></li>
+                        <li><a href="pilotos/piloto_mercedes.html">Mercedes</a></li>
+                        <li><a href="pilotos/piloto_alpine.html">Alpine</a></li>
+                        <li><a href="pilotos/piloto_haas.html">HAAS</a></li>
+                    </ul>
+                </li>
+                <li><a href="escuderia.html">Escudería</a></li>
+            </ul>
+        </nav>
+        <nav id="menu">
+            <ul class="redes">
+                <li><a href="#"><img src="redes_sociales/lineas.png" alt="Redes Sociales"></a>
+                    <ul>
+                        <li><a href="https://es-es.facebook.com/Formula1/" target="_blank"><img src="redes_sociales/face.png" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/f1/" target="_blank"><img src="redes_sociales/ig.png" alt="Instagram"></a></li>
+                        <li><a href="https://x.com/F1" target="_blank"><img src="redes_sociales/twitter.webp" alt="Twitter"></a></li>
+                    </ul>
+                </li>
+                <li><a href="sesion.html"><img src="redes_sociales/inicio_sesion.png" alt="Inicio Sesion"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Evolución de los automóviles de Fórmula 1</h1>
+        <section class="decade">
+            <h2 id="text-titulo">Coche 1950</h2>
+            <div class="car-info">
+                <img id="image-content" src="coche/alfa_romeo.jpg" alt="Alfa Romeo 158">
+                <div>
+                    <p id="text-content">Modelo: Alfa Romeo 158</p>
+                    <p id="text-content2">Año: 1950</p>
+                    <p id="text-content3">Motor: 1.5 L8 Supercharged</p>
+                    <p id="text-content4">Descripción: El Alfa Romeo 158 fue uno de los primeros coches en ganar un campeonato de Fórmula 1.</p>
+                </div>
+            </div>
+        </section>
+        <div id="buttons" class="boton">
+            <button onclick="changeContent('opcion1')">Opción 1</button>
+            <button onclick="changeContent('opcion2')">Opción 2</button>
+            <button onclick="changeContent('opcion3')">Opción 3</button>
+        </div>
+    </main>
+    <script>
+        function changeContent(option) {
+            const textTitulo = document.getElementById('text-titulo');
+            const textContent = document.getElementById('text-content');
+            const textContent2 = document.getElementById('text-content2');
+            const textContent3 = document.getElementById('text-content3');
+            const textContent4 = document.getElementById('text-content4');
+            const imageContent = document.getElementById('image-content');
+    
+            if (option === 'opcion1') {
+                textTitulo.textContent = "Coche 1950";
+                textContent.textContent = 'Modelo: Alfa Romeo 158';
+                textContent2.textContent = 'Año: 1950';
+                textContent3.textContent = 'Motor: 1.5 L8 Supercharged';
+                textContent4.textContent = 'Descripción: El Alfa Romeo 158 fue uno de los primeros coches en ganar un campeonato de Fórmula 1.';
+                imageContent.src = 'coche/alfa_romeo.jpg';
+                imageContent.style.display = 'block';
+            } else if (option === 'opcion2') {
+                textTitulo.textContent = "Coche 1960";
+                textContent.textContent = 'Modelo: Lotus 25';
+                textContent2.textContent = 'Año: 1962';
+                textContent3.textContent = 'Motor: 1.5 L V8';
+                textContent4.textContent = 'Descripción: El Lotus 25 fue el primer coche de F1 con un chasis monocasco.';
+                imageContent.src = 'coche/lotus.webp';
+                imageContent.style.display = 'block';
+            } else if (option === 'opcion3') {
+                textTitulo.textContent = "Coche 2020";
+                textContent.textContent = 'Modelo: Mercedes W11';
+                textContent2.textContent = 'Año: 2020';
+                textContent3.textContent = 'Motor: Mercedes-AMG F1 M11 EQ Performance';
+                textContent4.textContent = 'Descripción: El Mercedes W11 dominó la temporada 2020 de Fórmula 1 con Lewis Hamilton.';
+                imageContent.src = 'coche/coche_mercedes.jpg';
+                imageContent.style.display = 'block';
+            } else {
+                textContent.textContent = 'Haz clic en un botón para cambiar el contenido.';
+                textContent2.textContent = '';
+                textContent3.textContent = '';
+                textContent4.textContent = '';
+                imageContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
