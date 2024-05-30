@@ -1,0 +1,168 @@
+<!Doctype html>
+<html lang="es">
+	<head>
+		<title> Pagina principal </title>
+		<link rel="stylesheet" href="../styles.css">
+		<style>
+			main {
+				padding: 20px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.pilotos {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				margin: 20px 0;
+			}
+
+			.piloto {
+				background-color: white;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				margin: 16px;
+				width: 45%;
+				padding: 1em;
+				text-align: center;
+			}
+
+			.piloto img {
+				width: 30%;
+				border-radius: 10px;
+				margin-bottom: 15px;
+			}
+
+			.logros {
+				text-align: left;
+				margin-top: 10px;
+			}
+
+			h2 {
+				text-align: center;
+				font-size: 40px;
+				color: red;
+				margin-bottom: 20px;
+			}
+
+			footer {
+				background-color: #333;
+				color: white;
+				text-align: center;
+				padding: 1em 0;
+				position: fixed;
+				width: 100%;
+				bottom: 0;
+			}
+
+			footer {
+				background-color: #333;
+				color: white;
+				text-align: center;
+				padding: 1em 0;
+				position: fixed;
+				width: 100%;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a><img src="../logof1.webp"></a>
+			<nav id="menu">
+					<ul>
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="../coches.html">Coches</a></li>
+						<li><a href="../circuito.html">Circuito</a></li>
+						<li><a href="#">Pilotos</a>
+							<ul>
+								<li><a href="piloto_ferrari.html">Ferrari</a></li>
+								<li><a href="piloto_redbull.html">Red Bull</a></li>
+								<li><a href="piloto_mclaren.html">Mclaren</a></li>
+								<li><a href="piloto_astonmartin.html">Aston Martin</a></li>
+								<li><a href="piloto_mercedes.html">Mercedes</a></li>
+								<li><a href="piloto_alpine.html">Alpine</a></li>
+								<li><a href="piloto_haas.html">HAAS</a></li>
+							</ul>
+						</li>
+						<li><a href="../escuderia.html">Escuderia</a></li>
+					</ul>
+			</nav>
+			<nav id="menu">
+				<ul class="redes">
+					<li><a href="#"><img src="../redes_sociales/lineas.png"></a>
+						<ul>
+							<li><a href="https://es-es.facebook.com/Formula1/" target="_blank"><img src="../redes_sociales/face.png"></a></li>
+							<li><a href="https://www.instagram.com/f1/" target="_blank"><img src="../redes_sociales/ig.png"></a></li>
+							<li><a href="https://x.com/F1" target="_blank"><img src="../redes_sociales/twitter.webp"></a></li>
+						</ul>
+					</li>
+					<li><a href="../sesion.html"><img src="../redes_sociales/inicio_sesion.png" alt="Inicio Sesion"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Mclaren</h2>
+			<div>
+				<section class="pilotos">
+					<article class="piloto">
+						<img src="mclaren/lando.jpg" alt="Lando Norris" title="Lando Norris">
+						<h3> Lando Norris</h3>
+						<p>Equipo: Mclaren</p>
+						<p>Nacionalidad: Britanica</p>
+						<p>Lugar de nacimiento: Bristol</p>
+						<p>Fecha de nacimiento: 13 de noviembre de 1999</p>
+						<p>Logros: </p>
+							<dl class="logros">
+								<dt>Premios y condecoraciones:</dt>
+								<dd>Gran premio de Miami </dd>
+								
+								<dt>Victorias:</dt>
+								<dd>1 victorias</dd>
+								
+								<dt>Podios:</dt>
+								<dd>15 podios</dd>	
+								
+								<dt>Poles:</dt>
+								<dd>1 pole</dd>
+								
+								<dt>Titulos:</dt>
+								<dd>Campeon del campeonato del mundial de karting</dd>
+								<dd>Campeon de los campeonatos de Eurocopa Fórmula Renault, Fórmula Renault NEC y Toyota Racing Series en 2016</dd>
+								<dd>Campeon del campeonato europeo de Formula 3 en 2017</dd>
+								<dd>Subcampeon del campeonato europeo de Formula 2 en 2018</dd>	
+							</dl>
+					</article>
+				</section>
+				<section class="pilotos">
+					<article class="piloto">
+						<img src="mclaren/oscar.jpg" alt="Oscar Piastri" title="Oscar Piastri">
+						<h3> Oscar Jack Piastri </h3>
+						<p>Equipo: Mclaren</p>
+						<p>Nacionalidad: Australiano</p>
+						<p>Lugar de nacimiento: Australia</p>
+						<p>Fecha de nacimiento: 6 de abril de 2001</p>
+						<p>Logros: </p>
+							<dl class="logros">
+								<dt>Premios y condecoraciones:</dt>
+								<dd>Todavia no ha conseguido añadir un premio a su carrera</dd>
+								
+								<dt>Victorias:</dt>
+								<dd>No ha conseguido ninguna victoria</dd>
+								
+								<dt>Podios:</dt>
+								<dd>2 podios</dd>
+								
+								<dt>Poles:</dt>
+								<dd>0 poles</dd>
+								
+								<dt>Titulos:</dt>
+								<dd>El piloto todavia no cuenta con ningun título</dd>
+							</dl>
+					</article>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
